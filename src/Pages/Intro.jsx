@@ -1,11 +1,16 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 function Intro() {
   return (
     <Main>
       <Title>Andrea Diana</Title>
-      <Button>ENTER</Button>
+      <Link to="/portfolio">
+        <Button>Enter</Button>
+      </Link>
     </Main>
   );
 }
@@ -16,13 +21,13 @@ const Main = styled.div`
   text-align: center;
   background-image: url("https://res.cloudinary.com/adiunilux2021/image/upload/v1627890798/PICT4920_new_1_q69pmn.jpg");
   background-size: cover;
-  height: 98vh;
+  height: 100vh;
 `;
 
 const Title = styled.h1`
   padding-top: 200px;
   color: white;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 400;
   margin: 0;
   font-family: "WindSong", cursive;
