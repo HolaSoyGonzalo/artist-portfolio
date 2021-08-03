@@ -1,16 +1,21 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-
+import { Button } from "@material-ui/core";
 import styled from "styled-components";
 
-function Intro() {
+function Intro(props) {
+  const clickHandler = () => {
+    props.history.push("/portfolio");
+  };
+
   return (
     <Main>
       <Title>Andrea Diana</Title>
-      <Link to="/portfolio">
-        <Button>Enter</Button>
-      </Link>
+      {/* <Link to="/portfolio"> */}
+      <Button variant="contained" color="primary" onClick={clickHandler}>
+        Enter
+      </Button>
+      {/* </Link> */}
     </Main>
   );
 }
@@ -33,19 +38,19 @@ const Title = styled.h1`
   font-family: "WindSong", cursive;
 `;
 
-const Button = styled.button`
-  height: 40px;
-  border: white 1px solid;
-  border-radius: 10%;
-  margin-top: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  font-weight: 400;
-  font-size: 18px;
-  background: none;
-  :hover {
-    background: white;
-    color: black;
-  }
-`;
+// const Button = styled.button`
+//   height: 40px;
+//   border: white 1px solid;
+//   border-radius: 10%;
+//   margin-top: 80px;
+//   padding-left: 10px;
+//   padding-right: 10px;
+//   color: white;
+//   font-weight: 400;
+//   font-size: 18px;
+//   background: none;
+//   :hover {
+//     background: white;
+//     color: black;
+//   }
+// `;
