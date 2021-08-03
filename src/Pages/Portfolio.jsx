@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-
+import Example from "../Components/Example";
 function Portfolio() {
-  return <Container>NUMBER 1</Container>;
+  return (
+    <Container>
+      <Example />
+    </Container>
+  );
 }
 
 export default Portfolio;

@@ -1,9 +1,26 @@
 import React from "react";
 
 import { Button } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
 import styled from "styled-components";
 
 function Intro(props) {
+  const StyledButton = withStyles({
+    root: {
+      background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+      borderRadius: 3,
+      border: 0,
+      color: "white",
+      height: 48,
+      padding: "0 30px",
+      boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+      marginTop: "100px",
+    },
+    label: {
+      textTransform: "capitalize",
+    },
+  })(Button);
+
   const clickHandler = () => {
     props.history.push("/portfolio");
   };
@@ -11,11 +28,7 @@ function Intro(props) {
   return (
     <Main>
       <Title>Andrea Diana</Title>
-      {/* <Link to="/portfolio"> */}
-      <Button variant="contained" color="primary" onClick={clickHandler}>
-        Enter
-      </Button>
-      {/* </Link> */}
+      <StyledButton onClick={clickHandler}>ENTER</StyledButton>
     </Main>
   );
 }

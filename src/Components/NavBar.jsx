@@ -41,7 +41,7 @@ const Title = styled.h1`
 
 const NavBarMainWrapper = styled.div`
   width: 100%;
-  height: 100px;
+  height: 120px;
   border-bottom: 1px solid gray;
   display: flex;
   align-items: center;
