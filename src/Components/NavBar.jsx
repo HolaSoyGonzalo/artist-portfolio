@@ -41,8 +41,7 @@ const Title = styled.h1`
 
 const NavBarMainWrapper = styled.div`
   width: 100%;
-  height: 120px;
-  border-bottom: 1px solid gray;
+  height: 80px;
   display: flex;
   align-items: center;
   position: fixed;
@@ -62,7 +61,7 @@ const NavBarMainContainer = styled.div`
 const Left = styled.div`
   display: flex;
   align-items: center;
-  width: 400px;
+  width: 700px;
   transition: width 0.25s ease;
   @media (max-width: 975px) {
     width: 180px;
